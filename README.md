@@ -3,7 +3,7 @@ B-Ball Games
 
 Self-directed project
 
-10/02
+Thursday, October 2, 2014
   * NEED
     - I need to create wireframes
     - I need to create a new Rails Application along with User (Player) model, controllers, and views with forms
@@ -12,19 +12,19 @@ Self-directed project
   * Nice
     - It would be nice to have OAuth working
 
-10/06
+Monday, October 6, 2014
   * NEED
     - I need ability to create user (and multiple users)
     - User should be able to log in (using OAuth) with his/her twitter account
-    - I need to 
+    - I need to
 
-10/09
+Thursday, October 9, 2014
   * NEED
     - User receives communication from other teammates/players (aka friends)
     - User has ability to view map of rec. center locations
     - User has ability to view detailed information for each individual location
 
-10/13
+Monday, October 13, 2014
   * NEED
     - User interacters/communicaticates with other teammates (aka friends)
     - User specifies location of basketball game
@@ -39,6 +39,6 @@ Self-directed project
   *Oh Crap!
 
 
--10/16
-  - App must be funcitonal
+Thursday, October 16, 2014
+  - App must be functional
   - App must be deployed
