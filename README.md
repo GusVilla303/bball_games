@@ -6,13 +6,17 @@ Self-directed project
 10/02
   * NEED
     - I need to create wireframes
-    - I need to create my new Rails Application along with User model, controllers, and views with forms
+    - I need to create a new Rails Application along with User (Player) model, controllers, and views with forms
+    - I need to make sure RSPEC is working properly
     - I need to bring in the dataset for Denver Rec Centers
+  * Nice
+    - It would be nice to have OAuth working
 
 10/06
   * NEED
     - I need ability to create user (and multiple users)
-    - User should be able to have a twitter account for OAuth
+    - User should be able to log in (using OAuth) with his/her twitter account
+    - I need to 
 
 10/09
   * NEED
