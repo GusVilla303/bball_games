@@ -38,7 +38,7 @@ Monday, October 13, 2014
   * Nice
     - Mobile web friendly
     - Integrate google map routes
-    - Integrate weather notifcations to advise of hazardous weather
+    - Integrate weather notifications to advise of hazardous weather
 
   * Oh Crap!
 
