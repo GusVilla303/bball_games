@@ -20,7 +20,7 @@ Monday, October 6, 2014
   * NEED
     - I need ability to create user (and multiple users)
     - User should be able to log in (using OAuth) with his/her twitter account
-    - I need to
+    - I need to be able to upload a user's avatar
 
 Thursday, October 9, 2014
   * NEED
@@ -40,7 +40,7 @@ Monday, October 13, 2014
     - Integrate google map routes
     - Integrate weather notifcations to advise of hazardous weather
 
-  *Oh Crap!
+  * Oh Crap!
 
 
 Thursday, October 16, 2014
