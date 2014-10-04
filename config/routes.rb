@@ -3,5 +3,5 @@ Rails.application.routes.draw do
 
   resources :welcome
   root to: 'welcome#index'
-  # match 'auth/:provider/callback', to: 'sessions#create'
+  get 'auth/:provider/callback', to: 'sessions#create'
 end

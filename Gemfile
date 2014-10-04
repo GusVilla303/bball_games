@@ -16,6 +16,7 @@ gem 'active_model_serializers', '~> 0.9.0'
 gem 'unicorn'
 gem 'pry'
 gem 'omniauth-twitter'
+gem 'quiet_assets'
 
 
 group :development, :test do

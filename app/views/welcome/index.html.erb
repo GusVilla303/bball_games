@@ -20,7 +20,13 @@
             <h1 class="cover-heading">B-Ball Games</h1>
             <p class="lead">Hoop it up with your friends! </p>
             <p class="lead">
-              <a href="/auth/twitter" class="btn btn-lg btn-default">Sign In with Twitter</a>
+              <a href="/auth/twitter" class="btn btn-lg btn-default">
+                <% if current_user %>
+                  Signed in as <%= current_user.name %>
+                <% else %>
+                  Sign in with Twitter
+                <% end %>
+              </a>
             </p>
           </div>
 
