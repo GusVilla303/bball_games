@@ -61,6 +61,8 @@ GEM
     diff-lcs (1.2.5)
     erubis (2.7.0)
     execjs (2.2.1)
+    figaro (1.0.0)
+      thor (~> 0.14)
     hashie (3.3.1)
     hike (1.2.3)
     i18n (0.6.11)
@@ -192,8 +194,10 @@ DEPENDENCIES
   capybara
   coffee-rails (~> 4.0.0)
   database_cleaner
+  figaro (~> 1.0.0)
   jbuilder (~> 2.0)
   jquery-rails
+  omniauth (~> 1.2.2)
   omniauth-twitter
   paperclip (~> 4.1)
   pg

@@ -17,6 +17,8 @@ gem 'unicorn'
 gem 'pry'
 gem 'omniauth-twitter'
 gem 'quiet_assets'
+gem 'omniauth', '~> 1.2.2'
+gem 'figaro',   '~>1.0.0'
 
 
 group :development, :test do

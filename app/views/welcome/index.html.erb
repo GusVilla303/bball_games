@@ -23,6 +23,7 @@
               <a href="/auth/twitter" class="btn btn-lg btn-default">
                 <% if current_user %>
                   Signed in as <%= current_user.name %>
+                  <%= link_to "Sign out", signout_path %> 
                 <% else %>
                   Sign in with Twitter
                 <% end %>
