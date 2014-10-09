@@ -1,16 +1,12 @@
 class User < ActiveRecord::Base
-  # def self.from_omniauth(auth)
-  #   where(auth.slice("provider", "uid")).first || create_from_omniauth(auth)
-  # end
+  def self.from_omniauth(auth)
+    if !User.find_by(twitter_id: auth['uid'])
+      create_from_omniauth(auth)
+    else
+      User.find_by(twitter_id: auth['uid'])
+    end
 
-def self.from_omniauth(auth)
-  if !User.find_by(twitter_id: auth['uid'])
-    create_from_omniauth(auth)
-  else
-    User.find_by(twitter_id: auth['uid'])
   end
-
-end
 
   def self.create_from_omniauth(auth)
     create! do |user|
