@@ -1,0 +1,32 @@
+<div class="container-fluid dashboard">
+  <div class="row">
+    <div class="col-md-4"></div>
+    <div class="col-md-4">
+      <div class="admin-double-dash">
+        <div class="admin-dashboard">
+          <div class="admin-title">
+            <strong>
+              <%= @user.first_name %>
+            </strong>
+            <strong><%= @user.first_name %>'s Dashboard</strong>
+            <hr/>
+          </div>
+          <div class="admin-section">
+            <div class="admin-section-title">
+              <span class="glyphicon glyphicon-user"></span>
+              <strong>My Account</strong>
+            </div>
+            <div class="admin-section-content">
+              <%= link_to "View my public profile", user_path(current_user) %>
+              <br/>
+              <%= link_to "Update my information", edit_user_path(current_user) %>
+              <br/>
+              <%= link_to "Change my profile photo", avatar_user_path(current_user) %>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+    <div class="col-md-4"></div>
+  </div>
+</div>
