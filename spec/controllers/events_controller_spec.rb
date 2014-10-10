@@ -1,6 +1,6 @@
-require 'rails_helper'
+require 'spec_helper'
 
-RSpec.describe EventController, :type => :controller do
+RSpec.describe EventsController, :type => :controller do
 
   describe "GET index" do
     it "returns http success" do

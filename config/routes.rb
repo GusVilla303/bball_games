@@ -12,6 +12,7 @@ Rails.application.routes.draw do
   get 'auth/failure', to: redirect('/')
   get 'signout', to: 'sessions#destroy', as: 'signout'
 
-
   get 'dashboard', to: 'users#dashboard', as: 'dashboard'
+
+  resources :events
 end
