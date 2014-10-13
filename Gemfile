@@ -19,7 +19,7 @@ gem 'figaro',   '~>1.0.0'
 gem 'faraday'
 
 group :development, :test do
-  gem 'rspec-rails'
+  gem 'rspec-rails', '~> 3.0.0'
   gem 'capybara'
   gem 'pry'
 end

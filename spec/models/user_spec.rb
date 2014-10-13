@@ -1,5 +1,8 @@
 require 'spec_helper'
 
 RSpec.describe User, :type => :model do
-  pending "add some examples to (or delete) #{__FILE__}"
+  it 'should have many events' do
+    u = User.reflect_on_association(:events)
+    u.macro.should == :has_many
+  end
 end

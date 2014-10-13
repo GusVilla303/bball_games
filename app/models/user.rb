@@ -1,4 +1,7 @@
 class User < ActiveRecord::Base
+  has_many :user_events
+  has_many :events, through: :user_events
+
   def self.from_omniauth(auth)
     if !User.find_by(twitter_id: auth['uid'])
       create_from_omniauth(auth)
