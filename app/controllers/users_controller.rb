@@ -12,7 +12,7 @@ class UsersController < ApplicationController
 
   def show
     respond_to do |format|
-      format.html 
+      format.html
       format.json { render json: @user }
     end
   end
@@ -63,7 +63,6 @@ class UsersController < ApplicationController
   end
 
   def dashboard
-    return render "errors/404" unless current_user
     @user = current_user
   end
 

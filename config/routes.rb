@@ -1,19 +1,6 @@
 Rails.application.routes.draw do
-  get 'user_events/index'
 
-  get 'user_events/show'
-
-  get 'user_events/new'
-
-  get 'user_events/edit'
-
-  get 'user_events/create'
-
-  get 'user_events/update'
-
-  get 'user_events/destroy'
-
-  resources :users,       only: [:new, :create, :show, :edit, :update] do
+  resources :users,  only: [:new, :create, :show, :edit, :update] do
     member do
       get :dashboard
       get :avatar
@@ -29,4 +16,7 @@ Rails.application.routes.draw do
   get 'dashboard', to: 'users#dashboard', as: 'dashboard'
 
   resources :events
+  resources :locations
+  resources :user_events
+
 end

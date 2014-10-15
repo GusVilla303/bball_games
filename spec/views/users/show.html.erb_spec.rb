@@ -19,4 +19,9 @@ RSpec.describe "users/show", :type => :view do
     expect(rendered).to match(/Uid/)
     expect(rendered).to match(/Name/)
   end
+
+  xit "diplays a user's event(s)" do
+    event = Event.create!(date:
+    )
+  end
 end
