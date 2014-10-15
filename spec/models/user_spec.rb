@@ -5,6 +5,4 @@ RSpec.describe User, type: :model do
     u = User.reflect_on_association(:events)
     expect(u.macro).to eq(:has_many)
   end
-
-  
 end
