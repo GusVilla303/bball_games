@@ -20,8 +20,12 @@
   </p> -->
 
   <p>
-    <strong>Event:</strong>
     <% current_user.events.each do |event| %>
+    <strong>Location: </strong>
+      <%= event.location.name.capitalize %>
+  </p>
+  <p>
+    <strong>Event:</strong>
       <%= event.description %>
     <% end %>
   </p>
