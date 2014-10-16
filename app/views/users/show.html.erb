@@ -21,12 +21,12 @@
 
   <p>
     <% current_user.events.each do |event| %>
-    <strong>Location: </strong>
-      <%= event.location.name.capitalize %>
+      <strong>Event:</strong>
+      <%= event.description %>
   </p>
   <p>
-    <strong>Event:</strong>
-      <%= event.description %>
+      <strong>Location: </strong>
+      <%= event.location.name.capitalize %>
     <% end %>
   </p>
     <%= link_to 'Edit', edit_user_path(@user) %> |
