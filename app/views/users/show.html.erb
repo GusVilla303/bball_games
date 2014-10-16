@@ -14,21 +14,20 @@
     <%= current_user.last_name %>
   </p>
 
-  <!-- <p>
-    <strong>Provider:</strong>
-    <%= current_user.provider %>
-  </p> -->
-
   <p>
     <% current_user.events.each do |event| %>
       <strong>Event:</strong>
       <%= event.description %>
   </p>
+
   <p>
       <strong>Location: </strong>
       <%= event.location.name.capitalize %>
     <% end %>
   </p>
+  
+  <p>
     <%= link_to 'Edit', edit_user_path(@user) %> |
     <%= link_to "Sign Out", signout_path %>
+  </p>
 </div>
