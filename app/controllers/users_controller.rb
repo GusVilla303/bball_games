@@ -66,6 +66,11 @@ class UsersController < ApplicationController
     @user = current_user
   end
 
+  def high_res_profile
+    current_user.image.sub "_normal", ""
+  end
+  helper_method :high_res_profile
+
   private
 
   def set_user

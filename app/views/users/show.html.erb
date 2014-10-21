@@ -5,6 +5,10 @@
   </p>
 
   <p>
+      <%= image_tag high_res_profile %>
+  </p>
+
+  <p>
     <strong>First name:</strong>
     <%= current_user.first_name %>
   </p>
@@ -25,7 +29,7 @@
       <%= event.location.name.capitalize %>
     <% end %>
   </p>
-  
+
   <p>
     <%= link_to 'Edit', edit_user_path(@user) %> |
     <%= link_to "Sign Out", signout_path %>

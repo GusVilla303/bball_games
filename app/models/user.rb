@@ -16,12 +16,13 @@ class User < ActiveRecord::Base
       user.provider         = auth["provider"]
       user.twitter_id       = auth["uid"]
       user.name             = auth["info"]["nickname"]
+      user.image            = auth["info"]["image"]
     end
   end
 
   private
 
   def user_params
-    params.require(:users).permit(:provider, :uid, :nickname)
+    params.require(:users).permit(:provider, :uid, :nickname, :image)
   end
 end
