@@ -1,14 +1,14 @@
 @import "welcome";
 @import "events";
+@import "users";
 
-
-
-body {
+.background_image  {
   background-image: image-url("bball_image_home.jpg");
   background-size: cover;
   height: 100%;
   width: 100%;
   z-index: -100;
+  position: fixed;
 }
 
 // User Dashboard

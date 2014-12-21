@@ -4,7 +4,7 @@ class EventsController < ApplicationController
   end
 
   def show
-    
+
   end
 
   def new
@@ -16,6 +16,7 @@ class EventsController < ApplicationController
 
 
   def create
+     UserNotifier.send_signup_email(@user).deliver
   end
 
   def update

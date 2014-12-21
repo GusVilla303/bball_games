@@ -8,7 +8,6 @@ class User < ActiveRecord::Base
     else
       User.find_by(twitter_id: auth['uid'])
     end
-
   end
 
   def self.create_from_omniauth(auth)
