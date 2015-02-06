@@ -1,5 +1,6 @@
 class UsersController < ApplicationController
   before_action :set_user, only: [:show, :edit, :update, :dashboard, :destroy]
+  helper_method :high_res_profile
 
   def index
     @users = User.all
@@ -50,7 +51,6 @@ class UsersController < ApplicationController
   def high_res_profile
     current_user.image.sub "_normal", ""
   end
-  helper_method :high_res_profile
 
   private
 
