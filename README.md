@@ -5,7 +5,7 @@
 B-Ball Games
 ===========
 
-Self-directed three-week solo project
+Work In Progress -- Self-directed project
 
 Live Project Link: 
 
