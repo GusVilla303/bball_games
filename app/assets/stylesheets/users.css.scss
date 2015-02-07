@@ -3,14 +3,15 @@
 // You can use Sass (SCSS) here: http://sass-lang.com/
 
 #header {
-  width: 100%;
+  position: relative;
+  left: 18%;
   text-align: center;
   margin-bottom: 0;
   padding: 5px;
+  border: 1px solid;
 }
 
-#nav {
-  margin-top: 0;
+#aside {
   width: 18%;
   height: 100%;
   float: left;
@@ -19,8 +20,9 @@
 }
 #section {
   margin-top: 5%;
-  width: 25%;
+  width: 35%;
   float: left;
+  text-align: left;
   padding: 10px;
 }
 #section h2 {

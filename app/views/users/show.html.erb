@@ -1,40 +1,38 @@
 <div id="header">
-  <h1><%= current_user.first_name %>'s Game List</h1>
+  <h1><%= current_user.name %></h1>
 </div>
 
-<div id="nav">
-  <p>
-    <strong>Signed in as:</strong>
-    <%= current_user.name %>
-  </p>
-
+<div id="aside">
+  <br />
   <p>
     <%= image_tag high_res_profile %>
   </p>
-
   <p>
     <%= current_user.first_name %>
   </p>
-
   <p>
     <% current_user.events.each do |event| %>
       <strong>Event:</strong>
       <%= event.description %>
   </p>
-
   <p>
       <strong>Location: </strong>
       <%= event.location.name.capitalize %>
     <% end %>
   </p>
-
   <p>
-    <%= link_to 'Edit', edit_user_path(@user) %> |
+    <%= link_to "Edit My Info", edit_user_path(@user) %><br /><br />
     <%= link_to "Sign Out", signout_path %>
   </p>
 </div>
 <div id="section">
-  <h2 id="see games">See Games</h2><br />
-  <h2 id="schedule game">Schedule Game</h2>
+  <div class="future game">
+    <h2 id="schedule game">
+      <%= link_to 'Schedule a B-ball game', location_path %>
+        <% Location.all.each do |location| %>
+        <% end %>
+    </h2><br />
+  </div>
+  <h2 id="see games">See scheduled games</h2><br />
 
 </div>
