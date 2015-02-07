@@ -1,4 +1,8 @@
-<div class="user_info">
+<div id="header">
+  <h1><%= current_user.first_name %>'s Game List</h1>
+</div>
+
+<div id="nav">
   <p>
     <strong>Signed in as:</strong>
     <%= current_user.name %>
@@ -28,4 +32,9 @@
     <%= link_to 'Edit', edit_user_path(@user) %> |
     <%= link_to "Sign Out", signout_path %>
   </p>
+</div>
+<div id="section">
+  <h2 id="see games">See Games</h2><br />
+  <h2 id="schedule game">Schedule Game</h2>
+
 </div>
