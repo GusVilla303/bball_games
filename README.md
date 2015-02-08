@@ -14,6 +14,8 @@ B-Ball Games is an individual side project, which is currently in its early stag
 
 To retrieve the most up-to-date Denver Rec Center locations information: 
 ```shell
-rake locations:genertate
+rake locations:generate
 ```
-The app enables a user to authenticate by using Oauth (Twitter) to gain access to his/her dashboard.     
+A user authenticates by using Oauth (Twitter) to gain access to his/her dashboard.  The user will be able to send a notification regarding when and where their next basketball game will take place group of selected friends. 
+
+A 'nice to have' will be to embed mapping capabilities (via Google maps) to make the app more convenient for the user and user's friends.  
