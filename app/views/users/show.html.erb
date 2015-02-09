@@ -1,5 +1,5 @@
 <div id="header">
-  <h1><%= current_user.name %></h1>
+  <h1 class="text-center"><%= current_user.name %></h1>
 </div>
 
 <div id="aside">
@@ -30,9 +30,8 @@
     <h2 id="schedule game">
       <%= link_to 'Schedule a B-ball game', location_path %>
         <% Location.all.each do |location| %>
-        <% end %>
-    </h2><br />
+      <% end %>
+    </h2>
   </div>
   <h2 id="see games">See scheduled games</h2><br />
-
 </div>
