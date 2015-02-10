@@ -7,31 +7,30 @@
   <div class="twitter-avatar">
     <%= image_tag high_res_profile %>
   </div>
-  <p>
+  <div>
     <%= current_user.first_name %>
-  </p>
-  <p>
+  </div><br />
+  <div>
     <% current_user.events.each do |event| %>
       <strong>Event:</strong>
-      <%= event.description %>
-  </p>
-  <p>
+        <%= event.description %><br /><br />
       <strong>Location: </strong>
-      <%= event.location.name.capitalize %>
+        <%= event.location.name.capitalize %>
     <% end %>
-  </p>
-  <p>
+  </div><br />
+  <div>
     <%= link_to "Edit My Info", edit_user_path(@user) %><br /><br />
     <%= link_to "Sign Out", signout_path %>
-  </p>
+  </div>
 </div>
+
 <div id="section">
   <div class="future game">
-    <h2 id="schedule game">
-      <%= link_to 'Schedule a B-ball game', location_path %>
+    <h2 id="schedule-game">
+      <%= link_to 'Schedule a B-ball game', locations_path %>
         <% Location.all.each do |location| %>
       <% end %>
     </h2>
   </div>
-  <h2 id="see games">See scheduled games</h2><br />
+  <h2 id="view-games">View scheduled games</h2><br />
 </div>
