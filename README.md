@@ -12,7 +12,7 @@ Live Project Link:
 
 B-Ball Games is an individual side project, which is currently in its early stages.  The app is able to retrieve location information for all Denver Recreation Centers (via http://data.denvergov.org) by running a `rake task` command through the terminal. 
 
-To retrieve the most up-to-date Denver Rec Center locations information: 
+To retrieve the most up-to-date Denver Rec Center locations information, run the following command: 
 ```shell
 rake locations:generate
 ```
