@@ -16,6 +16,6 @@ To retrieve the most up-to-date Denver Rec Center locations information, run the
 ```shell
 rake locations:generate
 ```
-A user authenticates by using Oauth (Twitter) to gain access to his/her dashboard.  The user will be able to send a notification regarding when and where their next basketball game will take place group of selected friends. 
+A user authenticates by using Oauth (Twitter) to gain access to his/her dashboard.  The user will be able to send a notification regarding when and where their next basketball game will take place to a group of selected friends. 
 
-A 'nice to have' will be to embed mapping capabilities (via Google maps) to make the app more convenient for the user and user's friends.  
+A 'nice to have' will be to embed mapping capabilities (via Google maps) to make the app more convenient for the user and his/her friends.  
